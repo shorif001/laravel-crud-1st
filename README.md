@@ -66,9 +66,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## run
 
-php artisan serve
-php artisan make:model Student -m
-php artisan migrate
-php artisan make:controller StudentController -r
+- php artisan serve
+- php artisan make:model Student -m
+- php artisan migrate
+- php artisan make:controller StudentController -r
 
-DB_DATABASE=image_crud
+- DB_DATABASE=image_crud
