@@ -14,6 +14,8 @@ class StoreStudentRequest extends FormRequest
     public function authorize()
     {
         return true;
+        //when you return false you found : 403 THIS ACTION IS UNAUTHORIZED.
+        //solved: Reuests > StoreStudentReuest.php > authorize return true
     }
 
     /**

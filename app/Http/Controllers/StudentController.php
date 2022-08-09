@@ -50,7 +50,8 @@ class StudentController extends Controller
         } else {
                 dd('No image was found');
             }
-
+        //when you return false you found : 403 THIS ACTION IS UNAUTHORIZED.
+        //solved: Reuests > StoreStudentReuest.php > authorize return true
 
         $student->save();
         return redirect()->back()->with('status', 'Student Added Successfully.');
