@@ -47,15 +47,9 @@ class StudentController extends Controller
             $filename = time().'.'.$extention;
             $file->move('uploads/students', $filename);
             $student->image = $filename;
-        }
-        // if( $request->hasFile('image')){ 
-        //     $image = $itemreq->file('image'); 
-        //     $fileName = $image->getClientOriginalName();
-        // $fileExtension = $image->getClientOriginalExtension();
-        //     dd($fileExtension); 
-        // } else {
-        //     dd('No image was found');
-        // }
+        } else {
+                dd('No image was found');
+            }
 
 
         $student->save();
